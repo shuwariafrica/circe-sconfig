@@ -15,7 +15,7 @@ val Versions = new {
   val circe = "0.14.1"
   val sconfig = "1.4.9"
   val discipline = "1.5.0"
-  val scalaCheck = "1.15.4"
+  val scalaCheck = "1.17.0"
   val scalaTest = "3.2.11"
   val scalaTestPlus = "3.2.11.0"
   val sjavatime = "1.1.9"
@@ -36,14 +36,14 @@ val commonSettings = Seq(
       "-feature",
       "-unchecked",
       "-language:postfixOps",
-      "-Xfatal-warnings",
+      "-Xfatal-warnings"
     )
     val scala2Options = List(
       "-language:higherKinds",
       "-Xsource:3",
       "-Ywarn-dead-code",
       "-Ywarn-numeric-widen",
-      "-Ywarn-unused:imports",
+      "-Ywarn-unused:imports"
     )
     if (scalaVersion.value == Versions.scala3) commonOptions else commonOptions ++ scala2Options
   },
